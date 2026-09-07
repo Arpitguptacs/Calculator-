@@ -19,6 +19,13 @@ public class Calculator{
             return num_1-num_2;
          
     }
+    if(nums_1>nums_2){
+             return nums_1%nums_2;
+     }else{
+           System.out.println("Opration is not posible");
+          return 0;
+     }
+    }
 
 
 
@@ -43,9 +50,11 @@ public class Calculator{
             break;  
             case '-': System.out.println(subtraction(nums_1, nums_2));
             break;
-            case 'x' : System.out.println(multiply(nums_1, nums_2));
+            case '*' : System.out.println(multiply(nums_1, nums_2));
             break;
             case '/' : System.out.println(divide(nums_1, nums_2));
+            break;
+            case '%':  System.out.println(remainder(nums_1,nums_2));
             break;
             default : System.out.println("Opperation is not possible");
 
